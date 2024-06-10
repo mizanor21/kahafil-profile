@@ -8,52 +8,46 @@ const Events = () => {
         Events & Activities
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-        <div className="">
-          <div className="card lg:max-w-lg bg-base-100 rounded-none border">
-            <figure>
-              <img src={event1} alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Shoes!</h2>
-              <p className="text-justify">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
-                adipisci praesentium tempore nostrum tempora facilis alias,
-                inventore dicta? Beatae eligendi, repudiandae recusandae
-                accusamus ea eaque assumenda inventore enim magnam nulla!
-              </p>
-            </div>
+        <div className="card lg:max-w-lg bg-base-100 rounded-none border">
+          <figure>
+            <img src={event1} alt="Shoes" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Shoes!</h2>
+            <p className="text-justify">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+              adipisci praesentium tempore nostrum tempora facilis alias,
+              inventore dicta? Beatae eligendi, repudiandae recusandae accusamus
+              ea eaque assumenda inventore enim magnam nulla!
+            </p>
           </div>
         </div>
-        <div className="">
-          <div className="card lg:max-w-lg bg-base-100 rounded-none border">
-            <figure>
-              <img src={event2} alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Shoes!</h2>
-              <p className="text-justify">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
-                adipisci praesentium tempore nostrum tempora facilis alias,
-                inventore dicta? Beatae eligendi, repudiandae recusandae
-                accusamus ea eaque assumenda inventore enim magnam nulla!
-              </p>
-            </div>
+        <div className="card lg:max-w-lg bg-base-100 rounded-none border">
+          <figure>
+            <img src={event2} alt="Shoes" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Shoes!</h2>
+            <p className="text-justify">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+              adipisci praesentium tempore nostrum tempora facilis alias,
+              inventore dicta? Beatae eligendi, repudiandae recusandae accusamus
+              ea eaque assumenda inventore enim magnam nulla!
+            </p>
           </div>
         </div>
-        <div className="">
-          <div className="card lg:max-w-lg bg-base-100 rounded-none border">
-            <figure>
-              <img src={event3} alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Shoes!</h2>
-              <p className="text-justify">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
-                adipisci praesentium tempore nostrum tempora facilis alias,
-                inventore dicta? Beatae eligendi, repudiandae recusandae
-                accusamus ea eaque assumenda inventore enim magnam nulla!
-              </p>
-            </div>
+        <div className="card lg:max-w-lg bg-base-100 rounded-none border">
+          <figure>
+            <img src={event3} alt="Shoes" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Shoes!</h2>
+            <p className="text-justify">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+              adipisci praesentium tempore nostrum tempora facilis alias,
+              inventore dicta? Beatae eligendi, repudiandae recusandae accusamus
+              ea eaque assumenda inventore enim magnam nulla!
+            </p>
           </div>
         </div>
       </div>

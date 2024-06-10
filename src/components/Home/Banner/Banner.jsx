@@ -33,13 +33,13 @@ const Banner = () => {
               <img
                 className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
                 src={banner}
-                alt="Kahafil Ora banner image"
+                alt="Kahafil Ora images"
               />
             </div>
-            <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
+            <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl font-serif">
               <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
                 <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400"></p>
-                <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                <h2 className="mb-5 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl sm:leading-none">
                   I&apos;m Kahafil Ora
                 </h2>
                 <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
