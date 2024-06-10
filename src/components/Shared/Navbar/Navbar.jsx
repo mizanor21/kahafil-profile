@@ -1,100 +1,67 @@
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
+  const navItems = (
+    <>
+      <li>
+        <NavLink to={"/"}>Home</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/about"}>About</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/experience"}>Experience</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/events"}>Events</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/gallery"}>Gallery</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/contact"}>Contact</NavLink>
+      </li>
+    </>
+  );
   return (
     <div>
-      <nav className="flex-no-wrap relative flex w-full  items-center justify-between bg-zinc-50  shadow-dark-mild dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-6">
-        <div className="flex w-full flex-wrap items-center justify-between px-3">
-          <button
-            className="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-            type="button"
-            data-twe-collapse-init
-            data-twe-target="#navbarSupportedContent1"
-            aria-controls="navbarSupportedContent1"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+      <div className="navbar bg-base-200 py-3">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
                 viewBox="0 0 24 24"
-                fill="currentColor"
+                stroke="currentColor"
               >
                 <path
-                  fillRule="evenodd"
-                  d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                  clipRule="evenodd"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
                 />
               </svg>
-            </span>
-          </button>
-
-          <div
-            className="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
-            id="navbarSupportedContent1"
-            data-twe-collapse-item
-          >
-            <h3 className="text-2xl font-serif">Kahafil</h3>
-          </div>
-
-          <div className="relative flex items-center">
-            <div
-              className="relative"
-              data-twe-dropdown-ref
-              data-twe-dropdown-alignment="end"
-            >
-              <ul
-                className="list-style-none me-auto flex flex-col ps-0 lg:flex-row"
-                data-twe-navbar-nav-ref
-              >
-                <li className="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
-                  <a
-                    className="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                    href="#"
-                    data-twe-nav-link-ref
-                  >
-                    About
-                  </a>
-                </li>
-                <li className="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
-                  <a
-                    className="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                    href="#"
-                    data-twe-nav-link-ref
-                  >
-                    Experiences
-                  </a>
-                </li>
-                <li className="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
-                  <a
-                    className="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                    href="#"
-                    data-twe-nav-link-ref
-                  >
-                    Events
-                  </a>
-                </li>
-                <li className="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
-                  <a
-                    className="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                    href="#"
-                    data-twe-nav-link-ref
-                  >
-                    Gallary
-                  </a>
-                </li>
-                <li className="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
-                  <a
-                    className="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                    href="#"
-                    data-twe-nav-link-ref
-                  >
-                    Contact
-                  </a>
-                </li>
-              </ul>
             </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-serif"
+            >
+              {navItems}
+            </ul>
           </div>
+          <a className="btn btn-ghost text-2xl font-serif">Kahafil Ora</a>
         </div>
-      </nav>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 text-lg font-serif">
+            {navItems}
+          </ul>
+        </div>
+        <div className="navbar-end">
+          <a className="btn">Button</a>
+        </div>
+      </div>
     </div>
   );
 };
