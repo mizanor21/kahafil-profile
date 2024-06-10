@@ -1,11 +1,5 @@
-import {
-  FaDownload,
-  FaFacebook,
-  FaFacebookSquare,
-  FaLinkedin,
-  FaYoutube,
-} from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import { FaDownload } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navItems = (
