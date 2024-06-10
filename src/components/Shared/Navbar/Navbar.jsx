@@ -1,4 +1,11 @@
-import { NavLink } from "react-router-dom";
+import {
+  FaDownload,
+  FaFacebook,
+  FaFacebookSquare,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navItems = (
@@ -24,9 +31,9 @@ const Navbar = () => {
     </>
   );
   return (
-    <div>
-      <div className="navbar bg-base-200 py-3">
-        <div className="navbar-start">
+    <div className="bg-base-200">
+      <div className="navbar  py-3 container mx-auto lg:max-w-[1800px]">
+        <div className="navbar-start ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -51,7 +58,9 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <a className="btn btn-ghost text-2xl font-serif">Kahafil Ora</a>
+          <a className="btn btn-ghost text-lg md:text-2xl font-serif">
+            Kahafil Ora
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-lg font-serif">
@@ -59,7 +68,20 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <button className="btn">
+            Profile
+            <FaDownload />
+          </button>
+
+          {/* <Link to={""}>
+            <FaFacebookSquare />
+          </Link>
+          <Link to={""}>
+            <FaLinkedin />
+          </Link>
+          <Link to={""}>
+            <FaYoutube />
+          </Link> */}
         </div>
       </div>
     </div>

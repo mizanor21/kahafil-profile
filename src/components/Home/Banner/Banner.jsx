@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import banner from "../../../assets/images/banner-kahafil.jpeg";
 
 const Banner = () => {
   const settings = {
@@ -31,8 +32,8 @@ const Banner = () => {
               </svg>
               <img
                 className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                alt=""
+                src={banner}
+                alt="Kahafil Ora banner image"
               />
             </div>
             <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
